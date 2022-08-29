@@ -1,0 +1,3 @@
+create input and output folder
+input : your picture for train
+output : crop picture from file s1_crop_detect.py
