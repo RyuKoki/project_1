@@ -9,4 +9,4 @@
 - Model-View-Template 
   - http response at return function in app > views.py
   - mapping views with project > urls.py and import views from app by `from <project name> import views`
-    - in 
+    - in list of urlpatterns add the page that want to render from app > views.py such as `path('', views.index), # HOMEPAGE`
