@@ -1,0 +1,79 @@
+{% extends 'survey2.html' %}
+
+{% block content %}
+<!-- progress bar -->
+<div class="progress" style="height: 20px;">
+  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Warning striped example"
+    style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="row align-items-center " style="height: 20px;"></div>
+
+<!-- survay -->
+<div class="row align-items-center fs-2 fw-bold " style="height: 80px;">
+  <div class="col  text-center text-black "> ปัญหาทางสภาพร่างกาย </div>
+</div>
+<p class="text-center text-black-50"> เลือกได้มากกว่า 1 อย่าง </p>
+
+<div class="row align-items-center " style="height: 20px;"></div>
+
+
+<div class="mx-0 mx-sm-auto  ">
+  <div class="card w-75 m-auto ">
+
+    <div class="modal-body m-4">
+      <!-- body in survey -->
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+
+        <div class="col">
+          <div class="card border-0">
+            <input type="checkbox" class="btn-check" id="physical1" autocomplete="off">
+            <label class="btn btn-outline-warning" for="physical1">
+              <img src="https://cdn-icons-png.flaticon.com/512/2176/2176938.png" class="rounded " alt="โรคความดันโลหิตสูง" style="width: 55px;height: 55px;">
+              <br>ภาวะความจำเสื่อม
+            </label>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card border-0">
+            <input type="checkbox" class="btn-check" id="physical2" autocomplete="off">
+            <label class="btn btn-outline-warning" for="physical2">
+              <img src="https://cdn-icons-png.flaticon.com/512/822/822102.png" class="rounded " alt="โรคความดันโลหิตสูง" style="width: 55px;height: 55px;">
+              <br>เห็นไม่ชัด/ตามัว
+            </label>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card border-0">
+            <input type="checkbox" class="btn-check" id="physical3" autocomplete="off">
+            <label class="btn btn-outline-warning" for="physical3">
+              <img src="https://cdn-icons-png.flaticon.com/512/3160/3160277.png" class="rounded " alt="โรคความดันโลหิตสูง" style="width: 55px;height: 55px;">
+              <br>เคลื่อนไหวไม่คล่อง
+            </label>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card border-0">
+            <input type="checkbox" class="btn-check" id="physical4" autocomplete="off">
+            <label class="btn btn-outline-warning" for="physical4">
+              <img src="https://cdn-icons-png.flaticon.com/512/508/508740.png" class="rounded " alt="โรคความดันโลหิตสูง" style="width: 55px;height: 55px;">
+              <br>ได้ยินไม่ชัดเจน
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-footer text-end">
+      <a href="/elderly/register/2" class="btn btn-primary">ย้อนกลับ</a>
+      <a href="/elderly/register/4" class="btn btn-primary">ถัดไป</a>
+      <a href="#" class="btn btn-dark">ยกเลิก</a>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
